@@ -2,7 +2,7 @@
 
 /**
  * main = Entry point
- * Description : 'this program print a text using puts'
+ * Description : this program print a text using puts
  * return: Always 0 (success)
  */
 int main(void)
