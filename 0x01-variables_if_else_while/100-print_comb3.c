@@ -10,29 +10,25 @@
 
 int main(void)
 {
-	int n = '0', k;
+	int d, p;
 
-	while (n < '9')
+	for (d = '0'; d < '9'; d++)
 	{
-		for (k = n + 1; k <= '9'; k++)
+		for (p = d + 1; p <= '9'; p++)
 		{
-			if (k != n)
+			if (p != d)
 			{
-				putchar(n);
-				putchar(k);
+				putchar(d);
+				putchar(p);
 
-				if (n == '8' && k == '9')
+				if (d == '8' && p == '9')
 					continue;
 
 				putchar(',');
 				putchar(' ');
 			}
 		}
-
-		k++;
-
 	}
-
 	putchar('\n');
 
 	return (0);
