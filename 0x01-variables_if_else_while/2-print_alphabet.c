@@ -13,9 +13,8 @@ int main(void)
 	char first_letter;
 
 	for (first_letter = 'a'; first_letter <= 'z'; first_letter++)
-	{
 		putchar(first_letter);
-	
-	}
+		putchar('\n');
+
 	return (0);
 }
