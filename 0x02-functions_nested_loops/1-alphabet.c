@@ -2,8 +2,8 @@
 
 /**
  * print_alphabet - View description
- * Description: prints the alphabet in lowercase from a-z fallowed by a new line
- * Return: Nothing.
+ * Description: It prints the alphabet in lowercase fallowed by a new line
+ * Return: Nothing to return.
  */
 void print_alphabet(void)
 {
@@ -13,3 +13,4 @@ void print_alphabet(void)
 		_putchar(k);
 	_putchar('\n');
 }
+
