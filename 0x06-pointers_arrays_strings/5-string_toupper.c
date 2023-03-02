@@ -4,15 +4,15 @@
  * @s: an input string
  * Return: char pointer to string
  */
-char *string_toupper(char *b)
+char *string_toupper(char *s)
 {
-	char *begin = b;
+	char *begin = s;
 
-	while (*b)
+	while (*s)
 	{
-		if (*b >= 'a' && *b <= 'z')
-			*b -= 32;
-		b++;
+		if (*s >= 'a' && *s <= 'z')
+			*s -= 32;
+		s++;
 	}
 	return (begin);
 }
