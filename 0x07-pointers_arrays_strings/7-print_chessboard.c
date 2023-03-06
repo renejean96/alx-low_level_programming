@@ -1,24 +1,18 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * print_chessboard - print in the terminal the chessboard
- * @a: The character to print
- *
+ * print_chessboard - a function that prints a chessboard
+ * @a: an array input to print
+ * Return: Nothing
  */
-void print_chessboard(char(*a)[8])
+void print_chessboard(char (*a)[8])
 {
-	int b;
-	int c;
+	int i = 0, j;
 
-	for (b = 0; b < 8; b++)
+	for (; i < 8; i++)
 	{
-		for (c = 0; c < 8; c++)
-		{
-			printf("%d",a[b][c]);
-			
-			if (c == 7)
-				printf("\n");
-		}
+		for (j = 0; j < 8; j++)
+			_putchar(a[i][j]);
+		_putchar('\n');
 	}
 }
